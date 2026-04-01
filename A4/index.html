@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4</title>
+    <style>
+        h1{
+            color: white;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+        }
+        .register{
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            justify-content: center; 
+            margin-top: 10px;  
+        }
+
+        .button:hover{ 
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>회원가입</h1>
+        </header>
+
+        <div class="register">
+            <form>
+                <p> ID <input type="text"></p>
+            </form>
+
+            <form>
+                <p> EMAIL <input type="text"></p>
+            </form>
+
+            <form>
+                <p> PW <input type="text"></p>
+            </form>
+            
+            <form>
+                <p> PW 확인 <input type="text"></p>
+            </form>
+        </div>
+
+        <form>
+            <input type="button" class = "button" value="회원가입">
+        </form>
+    </div>
+</body>
+</html>
