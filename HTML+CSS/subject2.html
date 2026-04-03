@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header{
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: gray;
+            height: 60px;
+        }
+
+        .menu {
+            display:flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .menu > li {
+            padding: 10px 20px;
+            position : relative;
+        }
+
+        .menu li:hover {
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            border-bottom : 3px solid rgb(0, 0, 0);
+        }
+
+        .user{
+            display: flex;
+            gap : 15px;
+        }
+
+        .main{
+            background-color : lightgray;
+            height : 500px;
+        }
+
+        .footer{
+            background : black;
+            color : white;
+            height : 80px;
+
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub {
+            display: none;
+
+            position :  absolute;
+            top: 100%;
+            left : 0;
+            background: white;
+            width : 120px;
+        }
+
+        li:hover .sub {
+            display : block;
+        }
+    </style>
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo">Logo</div>
+
+        <ul class = "menu">
+            <li>
+                도서관소개
+                <ul class = "sub">
+                    <li>서브1</li>
+                    <li>서브2</li>
+                </ul>
+            </li>
+            <li>
+                도서자료실
+                <ul class = "sub">
+                    <li>서브1</li>
+                    <li>서브2</li>
+                </ul>
+            </li>
+            <li>도서서비스</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ul>
+
+
+        <div class="user">
+            <span>로그인</span>
+            <span>회원가입</span>
+        </div>
+    </header>
+
+    <main class = "main">
+        메인 내용
+    </main>
+
+    <footer class = "footer">
+        ⓒ 2026
+    </footer>
+    
+</body>
+</html>

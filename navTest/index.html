@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navTest</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin:0;
+            box-sizing : border-box;
+        }
+        .nav-container{
+            background-color: rgb(205, 196, 255);
+            display: flex;
+            width:1920px;
+            height:70px;
+            inset: 0;
+            justify-content: space-between;
+        }
+        .nav-container ul{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav-item{
+            padding: 15px;
+            text-align: center;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-item:hover{
+            background-color: rgb(161, 161, 161);
+            height: 100%;
+            text-align: center;
+        }
+
+        #logo{
+            height:100%;
+        }
+
+        .copylight{
+            background-color: rgb(10, 8, 36);
+            color: white;
+            display: flex;
+            justify-content : space-between;
+            padding: 30px;
+            
+        }
+
+        .copylight-nav{
+            display:flex;
+            
+        }
+
+        .copylight-serv{
+            list-style: none;
+            text-align: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin : 10px;
+        }
+        .sildes-img_1{
+            width: 1200px;
+            height: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="img/images.png" alt="" id = "logo">
+                <ul>
+                    <li class = "nav-item">도서관소개</li>
+                    <li class = "nav-item">도서자료실</li>
+                    <li class = "nav-item">회원서비스</li>
+                    <li class = "nav-item">도서검색</li>
+                    <li class = "nav-item"></li>
+                    <li class = "nav-item"></li>
+                    <li class = "nav-item"></li>
+                <ul>
+                <ul>
+                    <li class = "nav-item">로그인</li>
+                    <li class = "nav-item">회원가입</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <img src="img/images (52).jpg" alt="" class = "sildes-img_1">
+        </div>
+    </main>
+    <footer>
+        <div class ="copylight">
+            <div class="copylight-nav_1">
+                <ul>
+                    <li class = "copylight-serv">문의전화안내</li>
+                    <li class = "copylight-serv">1644-8000</li>
+                    <li class = "copylight-serv">운영시간(평일) 09:00~18:00</li>
+                </ul>
+            </div>
+
+            <div class="copylight-nav_2">
+                <ul>
+                    <li class = "copylight-serv">인천시 부평구 무네미로 448번길 77</li>
+                    <li class = "copylight-serv">한국산업인력공단 글로벌숙련기술진흥원</li>
+                    <li class = "copylight-serv">COPYRIGHTⓒ 2016 HRDKOREA</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
